@@ -1,0 +1,358 @@
+.platno {
+    padding: 20px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 80%;
+    margin: 0 auto;
+    clip-path: polygon(5% 0%, 95% 0%, 90% 100%, 10% 100%);
+    border-radius: 6px;
+    box-shadow: 100px 50px 80px rgba(224, 224, 224, 0.2);
+}
+
+.ofilmu {
+    
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+   
+    
+}
+.rezervacijaDetalji{
+background-color: rgba(86, 85, 85, 0.1);
+
+ margin: 10px;
+ padding: 20px;
+ border-radius: 10px;
+   
+}
+
+
+.film {
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 0px;
+   
+}
+
+.film img {
+    
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 250px;
+}
+
+.opis {
+    padding: 10px;
+    text-align: left;
+    align-items: left;
+    gap: 5px;
+    margin-bottom: 0px;
+   
+    
+}
+
+.opis p {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 3px;
+    text-align: left;
+}
+
+.opis h1 {
+    text-align: left;
+}
+.rezervisiDIV{
+    margin-top: 0px;
+    margin: 10px;
+    grid-column: span 2;
+    
+}
+.redBrojj{
+    display: flex;
+    text-align: right;
+    align-items: end;
+    justify-content: end;
+}
+
+.rezervisi {
+    background-color: #007bff;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 20px 10px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0px;
+    grid-column: span 2; 
+    width: 100%;
+}
+.rezervacijaInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 5px;
+    padding: 10px;  
+    font-size: 18px;
+    font-weight: 500;
+    grid-column: span 2;
+    margin-bottom: 8px;
+    padding-bottom: 0;
+}
+
+.rezervacija {
+    grid-column: span 2;
+    margin: 10px;
+    margin-bottom: 10px;
+    gap: 0;
+    background-color: rgba(86, 85, 85, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.red {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sjedista {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sjediste {
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    height: 35px;
+    width: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+
+.sjediste.odabrana {
+    background-color: #cce5ff;
+}
+
+.sadrzaj {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.sjediste{
+    color: rgb(138, 138, 138);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+.sjedista{
+    gap: 10px;
+    
+}
+.film {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  height: fit-content;
+  border-radius: 8px;
+}
+.opis{
+    height: fit-content;
+    
+}
+#filmSlika {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: block;
+  margin-bottom: 8px;
+}
+.redBrojj{
+    display: flex;
+    text-align: left;
+    width: 5px;
+    align-items: end;
+    justify-content: end;
+}
+.red:hover .redBrojj {
+    color: #a7a7a7;
+    cursor: pointer;
+}
+.sjediste:hover {
+    background-color: #a7a7a7;
+    cursor: pointer;
+}
+.sjediste.selektovana {
+  background-color: #00c853;
+  color: white;
+    }
+
+.custom-alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #323232;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  /* animation: fadeInOut 3s ease-in-out; */
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+.sjediste.rezervisana{
+    border-radius: 8px;
+    display: flex;
+    height: 35px;
+    width: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    background-color: #c83939;
+    cursor: not-allowed;
+}
+
+
+@media (max-width: 1200px) {
+    .sadrzaj {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    .rezervacijaDetalji{
+        grid-column: span 2;
+    }
+
+    .opis {
+        width: 100%;
+    }
+
+    .ofilmu {
+        grid-column: span 2;
+        
+    }
+    
+    .sjedista {
+        padding: 4px;
+        gap: 4px;
+    }
+    .sjedisterezervisana{
+        padding: 4px;
+        gap: 4px;
+
+    }
+    .red {
+        gap: 4px;
+        margin-bottom: 6px;
+    }
+
+    .sjediste {
+        width: 22px;
+        height: 22px;
+        font-size: 12px;
+        padding: 2px;
+        margin: 2px;
+    }
+    .sjediste.rezervisana {
+        width: 22px;
+        height: 22px;
+        font-size: 12px;
+        padding: 2px;
+        margin: 2px;
+    }
+    .sjedisterezervisana{
+        width: 22px;
+        height: 22px;
+        font-size: 12px;
+        padding: 2px;
+        margin: 2px;
+    }
+  
+
+    .film img {
+        max-height: 200px;
+    }
+    .rezervisiDIV{
+        grid-column: span 2;
+        margin: 10px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .film img {
+        max-height: 180px;
+    }
+}
+
+@media (max-width: 700px) {
+  .rezervacijaInfo {
+    margin-bottom: 4px;
+  }
+  .rezervisiDIV {
+    margin-top: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+    .film img {
+        max-height: 150px;
+    }
+}
+#datum{
+    
+    padding: 5px 25px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    
+}
+.filter-datum{
+    margin: 3px;
+}

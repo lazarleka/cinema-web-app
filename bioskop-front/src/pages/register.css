@@ -1,0 +1,252 @@
+/* General Styles */
+.loginmenu img {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+}
+
+.loginmenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    height: 60%;
+}
+
+.loginmenu .login {
+    top: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 40px;
+    gap: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-row input {
+    width: 48%;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 16px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.form-row input::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+.login button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 30px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.login button:hover {
+    transform: scale(1.05);
+    background-color: #0056b3;
+}
+
+.register-link {
+    text-align: right;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.register-link:hover {
+    transition: ease-in-out 0.3s;
+    transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+    .login input,
+    .login button {
+        font-size: 12px; /* Još manji font za manje ekrane */
+        padding: 8px; /* Smanjen padding */
+    }
+    .loginmenu {
+        height: 450px; /* Prilagodite visinu za manje ekrane */
+        background-size: cover; /* Održava pokrivanje prostora */
+        background-position: center; /* Centrirajte sliku */
+    }
+    #pozadina {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container2 {
+        grid-template-columns: repeat(2, 1fr);  
+        gap: 10px;
+        padding: 10px;
+        height: 150%;
+    }
+   #logo{
+        width:  20%;
+   }
+   #pozdaina{
+    height: 150%;
+   }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    
+
+    .navbar .start {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .end {
+        margin-top: 10px;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+   
+
+    .footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+        padding-top: 10px;
+    }
+    .loginmenu {
+        height: 450px; /* Prilagodite visinu za manje ekrane */
+        background-size: cover; /* Održava pokrivanje prostora */
+        background-position: center; /* Centrirajte sliku */
+    }
+    #pozadina {
+        height: 100%;
+        width: 100%;
+    }
+    .sidebar #grbBarr {
+        width: 160px;
+        
+        
+    }
+    .sidebar #domm{
+        width: 140px;
+        
+    }
+}
+
+@media (max-width: 700px) {
+    .container2 {
+        grid-template-columns: repeat(2, 1fr);  
+        gap: 10px;
+        padding: 10px;
+        height: 150%;
+    }
+    .sidebar {
+        align-items: center;
+        padding: 30px;
+        text-align: center;
+        font-size: 18px;
+        background-color: #0056b3;
+    }
+   #logo{
+        width:  20%;
+   }
+   #pozdaina{
+    height: 150%;
+   }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar .start {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .end {
+        margin-top: 10px;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    
+   
+        
+   
+
+   
+
+    .footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+        padding-top: 10px;
+    }
+    .loginmenu {
+        height: 400px; /* Prilagodite visinu za manje ekrane */
+        background-size: cover; /* Održava pokrivanje prostora */
+        background-position: center; /* Centrirajte sliku */
+    }
+    #pozadina {
+        height: 100%;
+        width: 100%;
+    }
+}
+#logo {
+    width: 25%; /* Smanjena širina slike */
+    margin: 10px auto; /* Centriranje slike */
+    display: block; /* Osigurava da slika bude blok element */
+}
+
+@media (max-width: 900px) {
+    #logo {
+        width: 18%; /* Još manja širina slike za manje ekrane */
+    }
+}
+
+@media (max-width: 600px) {
+    #logo {
+        width: 12%; /* Minimalna širina slike za vrlo male ekrane */
+    }
+}

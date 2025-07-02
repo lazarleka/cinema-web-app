@@ -1,0 +1,325 @@
+.containerMove{
+    
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin: 30px;
+    margin-bottom: 10px;
+    
+
+    
+    
+    
+}
+
+.move {
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.move img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; /* Dodata tranzicija za glatko povećanje */
+}
+.move h3{
+
+font-weight: 400;
+}
+.containerMove{
+    align-items: center;
+    justify-content: center;
+}
+.opis{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    align-items: center;
+    
+    box-sizing: border-box;
+    overflow: hidden;
+    
+    
+    
+    
+}
+.opis h3{
+    font-weight: 600;
+    font-size: 34px;
+    margin: 10px 0;
+}
+.opis p{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 26px;
+}
+.slike {
+    display: flex; /* Koristi Flexbox za horizontalno slaganje elemenata */
+    flex-wrap: nowrap; /* Sprečava prelamanje elemenata u sledeći red */
+    overflow-x: auto; /* Omogućava horizontalno skrolovanje */
+    gap: 50px; /* Razmak između elemenata */
+    margin: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+.slike::-webkit-scrollbar {
+    height: 8px; /* Visina scrollbar-a za horizontalno skrolovanje */
+}
+
+.slike::-webkit-scrollbar-thumb {
+    background-color: #0056b3; /* Boja scrollbar-a */
+    border-radius: 8px; /* Zaobljeni scrollbar */
+}
+
+.slike::-webkit-scrollbar-thumb:hover {
+    background-color: #003f7f; /* Boja scrollbar-a pri hover-u */
+}
+
+.slika {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.slika img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; /* Ovo će rastegnuti sliku da popuni parent */
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.trailer {
+    grid-column: span 3; /* Element zauzima tri kolone */
+    width: 100%; /* Širina elementa */
+    height: 100%; /* Visina elementa */
+    border-radius: 8px; /* Zaobljene ivice */
+    overflow: hidden; /* Sprečava prelazak sadržaja izvan okvira */
+    box-shadow: 2px 3px 4px rgba(86, 85, 85, 0.1); /* Dodaje senku */
+    box-sizing: border-box;
+    position: relative; /* Omogućava pozicioniranje sadržaja unutar */
+    border: 0px;
+}
+
+.trailer video {
+    width: 100%; /* Video zauzima punu širinu */
+    height: 100%; /* Video zauzima punu visinu */
+    object-fit: cover; /* Video se prilagođava tako da popuni ceo prostor */
+    position: absolute; /* Video se pozicionira unutar roditelja */
+    top: 0;
+    left: 0;
+}
+
+
+.kraj{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 30px;
+    margin-bottom: 10px;
+    gap: 20px;
+    
+
+}
+.OpisFilma{
+    margin: 20px;
+    background-color: rgba(86, 85, 85, 0.1);
+    border-radius: 8px;
+    gap:10px;
+}
+.kartica{
+   
+    margin: 30px;
+    margin-bottom: 10px;
+    gap: 20px;
+    color: white;
+    border-radius: 8px;
+}
+.kartica h4{
+   color: rgba(190, 182, 182, 0.432);;
+}
+.prikazivanja {
+     /* Element zauzima tri kolone */
+    text-align: center;
+    align-items: center;
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    overflow: hidden;
+    gap: 0px;
+    
+    border-radius: 8px;
+}
+
+.zaglavlje {
+    background-color: #0056b3;
+    font-size: 25px;
+    font-weight: 400;
+    border-radius: 8px 8px 0 0;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.tabelaPrikazivanja {
+    box-shadow: 2px 3px 4px rgba(86, 85, 85, 0.1);
+    margin: 0 auto; /* Centriranje tabele */
+    padding: 0px 0px 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tri kolone */
+     /* Tri kolone */
+    gap: 15px; /* Jednaki razmak između elemenata */
+    height: 250px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Omogućava vertikalno skrolovanje */
+    background-color: rgba(122, 121, 121, 0.1);
+    border-radius: 8px;
+}
+
+.tabelaPrikazivanja::-webkit-scrollbar {
+    width: 8px; /* Širina scrollbar-a */
+}
+
+.tabelaPrikazivanja::-webkit-scrollbar-thumb {
+    background-color: #0056b3; /* Boja scrollbar-a */
+    border-radius: 8px; /* Zaobljeni scrollbar */
+}
+
+.tabelaPrikazivanja::-webkit-scrollbar-thumb:hover {
+    background-color: #003f7f; /* Boja scrollbar-a pri hover-u */
+}
+
+.prikazvanje {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    height: fit-content;
+    text-align: center;
+    background-color: rgba(86, 85, 85, 0.1);
+}
+.prikazivanja p{
+    color: white;
+}
+.prikazvanje:hover {
+    cursor: pointer;
+    background-color: rgba(86, 85, 85, 0.2);
+    color: white;
+}
+.OpisNovosti{
+    margin: 20px;
+    background-color: rgba(86, 85, 85, 0.1);
+    border-radius: 8px;
+    gap:10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px;
+}
+.OpisNovosti p{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 20px;
+}
+.containerKorisnik {
+    margin: 20px;
+    background-color: rgba(86, 85, 85, 0.1);
+    border-radius: 8px;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.containerKorisnik p {
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 20px;
+}
+.rezervacijaPrikaz{
+        background-color: #1a1a1a;
+
+    border-radius: 8px;
+
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+@media (max-width: 1200px) {
+    .tabelaPrikazivanja {
+        grid-template-columns: repeat(3, 1fr); /* Dve kolone za srednje ekrane */
+    }
+    .trailer{
+        grid-column: span 2; /* Element zauzima dve kolone */
+        height: 250px; /* Smanjena visina za manje ekrane */
+    }
+    .slike{
+        gap: 20px; /* Smanjen razmak između slika */
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .tabelaPrikazivanja {
+        grid-template-columns: repeat(3,1fr); /* Jedna kolona za manje ekrane */
+    }
+}
+
+@media (max-width: 750px) {
+    .containerMove{
+        grid-template-columns: repeat(2, 1fr); /* Dve kolone za manje ekrane */
+        gap: 10px; /* Smanjen razmak između elemenata */
+    }
+    #trailer {
+        grid-column: span 2; /* Element zauzima dve kolone */
+        height: 250px; /* Smanjena visina za manje ekrane */
+    }
+    .kraj{
+        grid-template-columns: repeat(1, 1fr); /* Jedna kolona za manje ekrane */
+    }
+    .OpisNovosti{
+        font-size: 16px;
+    }
+    
+    .Korisnik{
+        font-size: 16px;
+       
+        
+    }
+ 
+    
+}
+
+
+@media (max-width: 620px) {
+    .containerKorisnik{
+        margin: 10px;
+    }
+    .OpisNovosti{
+        margin: 10px;
+    }
+}
+
+
+
+
+.rezervacijaKarte{
+    gap: 5px;
+    margin-top: 2px;
+}
